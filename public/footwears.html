@@ -182,7 +182,7 @@
 
     <!-- index/home shows all products -->
     <div class="fixed z-40 w-full px-4 pb-2 lg:px-16 lg:mx-auto text-lg font-semibold flex items-center gap-3 bg-white dark:bg-black">
-        <p class="py-2">All Products</p>
+        <p class="py-2">All Footwears</p>
        </div>
 
        <!-- main starts here -->
@@ -264,8 +264,8 @@
 
 <!-- script to make the current page active in the header (Home) -->
 <script>
-    document.getElementById("homes").classList.add("border-b-2", "border-black", "dark:border-white", "bg-gray-100", "dark:bg-gray-700");
-    document.getElementById("home").classList.add("border-b-2", "border-black", "dark:border-white");
+    document.getElementById("footwears").classList.add("border-b-2", "border-black", "dark:border-white", "bg-gray-100", "dark:bg-gray-700");
+    document.getElementById("footwear").classList.add("border-b-2", "border-black", "dark:border-white");
 
 </script>
 <script>
@@ -285,7 +285,7 @@
             const reversedData = jsonData.slice().reverse();
 
             // Filter and only display products whose category
-            const product = reversedData;
+            const product = reversedData.filter(product => product.category === 'Footwear');
 
 
             // Fetch data from Google Sheets and include the product.html file beacuse it handles it
