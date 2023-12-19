@@ -4,26 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothing</title>
+    <title>BALAMI</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
 </head>
 
 <body class="dark:bg-black dark:text-white relative">
-
-
     <!-- header starts here  -->
-    <header class="h-auto sticky top-0 z-50 ">
+    <header class="h-auto sticky top-0 z-50">
         <nav class="border-gray-200 px-4 lg:px-6 py-3 bg-white dark:bg-black relative">
             <div class="lg:grid grid-cols-7 place-content-center lg:mx-auto lg:px-10">
-
-
-
-
-
-                <div class="hidden col-span-3  justify-between items-center w-full lg:flex lg:w-auto" id="">
+                <div class="hidden col-span-3 justify-between items-center w-full lg:flex lg:w-auto" id="">
                     <ul class="flex flex-row flex-wrap gap-2">
                         <li id="homes">
                             <a href="index.html"
@@ -41,322 +32,319 @@
                             <a href="accessories.html"
                                 class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Accessories</a>
                         </li>
-                        <li id="footwears">
-                            <a href="footwears.html"
-                                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Footwears</a>
+                        <li id="shoes">
+                            <a href="shoes.html"
+                                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Shoes</a>
                         </li>
-
                     </ul>
                 </div>
 
-                <div class="grid place-content-center">
+                <!-- website name / image -->
+                <div class="flex items-center justify-between lg:mx-auto">
+                    <a href="aboutus.html" class="p-2 text-xl lg:hidden">
+                        <i class="fa-light fa-square-info"></i>
+                    </a>
                     <a href="index.html" class="flex items-center w-fit">
                         <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" /> -->
-                        <span
-                            class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">Clothing</span>
+                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">BALAMI
+                            CLOTHING</span>
                     </a>
+                    <button type="button" class="p-2 text-xl lg:hidden" id="menu-button">
+                        <i class="fa-light fa-message-smile"></i>
+                    </button>
                 </div>
 
                 <!-- social media icons -->
                 <div class="col-span-3 hidden lg:flex items-center justify-end space-x-4">
-
-                    <!-- facebook  -->
-                    <div>
-                        <a href="#"
-                            class="relative flex h-10 w-10 text-2xl items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] dark:text-black">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </div>
-
                     <!-- instagram  -->
                     <div>
-                        <a href="#"
-                            class="relative flex h-10 w-10 text-2xl items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] dark:text-black">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
+                      <a href="#"
+                        class="relative flex h-10 w-10 text-2xl items-center justify-center rounded-full bg-[#f4f7ff] dark:bg-gray-700">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
                     </div>
-
+          
                     <!-- tiktok  -->
                     <div>
-                        <a href="#"
-                            class="relative flex h-10 w-10 text-xl items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] dark:text-black">
-                            <i class="fa-brands fa-tiktok"></i> </a>
+                      <a href="#"
+                        class="relative flex h-10 w-10 text-xl items-center justify-center rounded-full bg-[#f4f7ff] dark:bg-gray-700">
+                        <i class="fa-brands fa-tiktok"></i>
+                      </a>
                     </div>
-
-                    <!-- messenger  -->
+          
+                    <!--  whatsapp -->
                     <div>
-                        <a href="#"
-                            class="relative flex h-10 w-10 text-xl items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff] dark:text-black">
-                            <i class="fa-brands fa-facebook-messenger"></i> </a>
+                      <a href="#"
+                        class="relative flex h-10 w-10 text-xl items-center justify-center rounded-full bg-[#f4f7ff] dark:bg-gray-700">
+                        <i class="fa-brands fa-whatsapp"></i>
+                      </a>
                     </div>
+          
+                    <!--  viber -->
+                    <div>
+                      <a href="#"
+                        class="relative flex h-10 w-10 text-xl items-center justify-center rounded-full bg-[#f4f7ff] dark:bg-gray-700">
+                        <i class="fa-brands fa-viber"></i>
+                      </a>
+                    </div>
+          
+                    <!-- about us -->
+                    <div>
+                      <a href="aboutus.html"
+                        class="relative h-10 px-2 flex items-center rounded-xl bg-[#f4f7ff] dark:bg-gray-700">
+                        <span class="whitespace-nowrap">About US</span>
+                      </a>
+                      
+                    </div>
+          
+                  </div>
 
-                    <!-- call  -->
-                    <div class="items-center pr-1 xl:flex">
+                <!-- Dropdown menu, initially hidden -->
+                <div
+                    class="absolute right-0 z-10 mt-2 mr-3 origin-top-right rounded-md bg-white dark:bg-gray-900 shadow-lg hidden">
+                    <div class="p-1">
                         <a href="#"
-                            class="mr-3 flex h-10 w-10 items-center justify-center rounded-full border-[.5px] border-[#e7e7e7] bg-[#f4f7ff]">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19.8343 12.6844C19.7655 11.8938 19.1124 11.3438 18.3218 11.3438H3.67804C2.88742 11.3438 2.26867 11.9281 2.16554 12.6844L1.44367 19.9031C1.40929 20.3156 1.54679 20.7625 1.82179 21.0719C2.09679 21.3812 2.50929 21.5531 2.95617 21.5531H19.078C19.4905 21.5531 19.903 21.3812 20.2124 21.0719C20.4874 20.7625 20.6249 20.35 20.5905 19.9031L19.8343 12.6844ZM19.2843 20.2812C19.2499 20.3156 19.1812 20.3844 19.0437 20.3844H2.95617C2.85304 20.3844 2.74992 20.3156 2.71554 20.2812C2.68117 20.2469 2.61242 20.1781 2.64679 20.0406L3.36867 12.7875C3.36867 12.6156 3.50617 12.5125 3.67804 12.5125H18.3562C18.528 12.5125 18.6312 12.6156 18.6655 12.7875L19.3874 20.0406C19.353 20.1438 19.3187 20.2469 19.2843 20.2812Z"
-                                    fill="#212B36"></path>
-                                <path
-                                    d="M11 14.0254C9.65937 14.0254 8.59375 15.091 8.59375 16.4316C8.59375 17.7723 9.65937 18.8379 11 18.8379C12.3406 18.8379 13.4062 17.7723 13.4062 16.4316C13.4062 15.091 12.3406 14.0254 11 14.0254ZM11 17.6348C10.3469 17.6348 9.79688 17.0848 9.79688 16.4316C9.79688 15.7785 10.3469 15.2285 11 15.2285C11.6531 15.2285 12.2031 15.7785 12.2031 16.4316C12.2031 17.0848 11.6531 17.6348 11 17.6348Z"
-                                    fill="#212B36"></path>
-                                <path
-                                    d="M2.26875 6.73769C2.3375 8.25019 3.67812 8.86894 4.36562 8.86894H6.77188C6.80625 8.86894 6.80625 8.86894 6.80625 8.86894C7.8375 8.80019 8.86875 8.11269 8.86875 6.73769V5.91269C10.0031 5.91269 12.6156 5.91269 13.75 5.91269V6.73769C13.75 8.11269 14.7812 8.80019 15.8125 8.86894H15.8469H18.2188C18.9062 8.86894 20.2469 8.25019 20.3156 6.73769C20.3156 6.63457 20.3156 6.25644 20.3156 5.91269C20.3156 5.63769 20.3156 5.39707 20.3156 5.36269C20.3156 5.32832 20.3156 5.29394 20.3156 5.29394C20.2125 4.33144 19.8687 3.54082 19.2844 2.92207L19.25 2.88769C18.3906 2.09707 17.3594 1.6502 16.5688 1.3752C14.2656 0.481445 11.3781 0.481445 11.2406 0.481445C9.2125 0.51582 7.90625 0.687695 5.94687 1.3752C5.19062 1.61582 4.15938 2.06269 3.3 2.85332L3.26562 2.88769C2.68125 3.50644 2.3375 4.29707 2.23438 5.25957C2.23438 5.29394 2.23438 5.32832 2.23438 5.32832C2.23438 5.39707 2.23438 5.60332 2.23438 5.87832C2.26875 6.18769 2.26875 6.60019 2.26875 6.73769ZM4.125 3.71269C4.8125 3.09394 5.67188 2.71582 6.39375 2.44082C8.18125 1.78769 9.35 1.65019 11.3094 1.61582C11.4469 1.61582 14.1281 1.6502 16.1906 2.44082C16.9125 2.71582 17.7719 3.05957 18.4594 3.71269C18.8375 4.12519 19.0781 4.67519 19.1469 5.32832C19.1469 5.43144 19.1469 5.60332 19.1469 5.87832C19.1469 6.22207 19.1469 6.60019 19.1469 6.70332C19.1125 7.49394 18.3562 7.66582 18.2531 7.66582H15.8813C15.5375 7.63144 14.9875 7.49394 14.9875 6.73769V5.32832C14.9875 5.05332 14.8156 4.84707 14.575 4.74394C14.3688 4.67519 8.35313 4.67519 8.14688 4.74394C7.90625 4.81269 7.73438 5.05332 7.73438 5.32832V6.73769C7.73438 7.49394 7.18437 7.63144 6.84062 7.66582H4.46875C4.36562 7.66582 3.60937 7.49394 3.575 6.70332C3.575 6.60019 3.575 6.22207 3.575 5.87832C3.575 5.60332 3.575 5.46582 3.575 5.36269C3.50625 4.67519 3.74688 4.12519 4.125 3.71269Z"
-                                    fill="#212B36"></path>
-                            </svg>
-                        </a>
-                        <div>
-                            <p class="hidden lg:block text-sm font-medium ">
-                                Contact Us ?
-                                <br />
-                                +001 123 456 789
-                            </p>
-                        </div>
+                            class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
+                                    class="fa-brands fa-instagram"></i></span><span>Instagram</span></a>
+                        <a href="#"
+                            class="block px-4 py-2 whitespace-nowrap space-x-3">
+                            <span><i class="fa-brands fa-tiktok"></i></span><span>TikTok</span></a>
+                        <a href="#"
+                            class="block px-4 py-2 whitespace-nowrap space-x-3">
+                            <span><i class="fa-brands fa-whatsapp"></i></span><span>Whatsapp</span></a>
+                        <a href="#"
+                            class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
+                                    class="fa-brands fa-viber"></i></span><span>Viber</span></a>
                     </div>
                 </div>
+            </div>
 
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    // Get references to the button and the dropdown menu
+                    const menuButton = document.getElementById("menu-button");
+                    const dropdownMenu = document.querySelector(".absolute.right-0");
 
-                <!-- socail media dropdown for mobile -->
-                <div class="absolute right-3 bottom-2 lg:hidden">
-                    <div class="relative text-left">
-                        <button type="button" class="text-xl p-2" id="menu-button">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17 9H7V7H17V9Z" fill="currentColor" />
-                                <path d="M7 13H17V11H7V13Z" fill="currentColor" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M2 18V2H22V18H16V22H14C11.7909 22 10 20.2091 10 18H2ZM12 16V18C12 19.1046 12.8954 20 14 20V16H20V4H4V16H12Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </button>
-                    </div>
+                    // Function to toggle the dropdown menu's visibility
+                    function toggleDropdown() {
+                        dropdownMenu.classList.toggle("hidden");
+                    }
 
-                    <!-- Dropdown menu, initially hidden -->
-                    <div
-                        class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white dark:bg-gray-900 shadow-lg hidden">
-                        <div class="p-1">
-                            <a href="#" class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
-                                        class="fa-brands fa-facebook"></i></span><span>Facebook</span></a>
-                            <a href="#" class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
-                                        class="fa-brands fa-instagram"></i></span><span>Instagram</span></a>
-                            <a href="#" class="block px-4 py-2 whitespace-nowrap space-x-3"><span><i
-                                        class="fa-brands fa-facebook-messenger"></i></span><span>Messenger</span></a>
-                            <a href="#" class="block px-4 py-2 whitespace-nowrap space-x-3"> <span><i
-                                        class="fa-brands fa-tiktok"></i></span><span>TikTok</span></a>
-                        </div>
-                    </div>
-                </div>
+                    // Add a click event listener to the button
+                    menuButton.addEventListener("click", toggleDropdown);
 
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        // Get references to the button and the dropdown menu
-                        const menuButton = document.getElementById("menu-button");
-                        const dropdownMenu = document.querySelector(".absolute.right-0");
-
-                        // Function to toggle the dropdown menu's visibility
-                        function toggleDropdown() {
-                            dropdownMenu.classList.toggle("hidden");
+                    // Add a click event listener to close the dropdown when clicking outside of it
+                    document.addEventListener("click", function (event) {
+                        if (
+                            !menuButton.contains(event.target) &&
+                            !dropdownMenu.contains(event.target)
+                        ) {
+                            dropdownMenu.classList.add("hidden");
                         }
-
-                        // Add a click event listener to the button
-                        menuButton.addEventListener("click", toggleDropdown);
-
-                        // Add a click event listener to close the dropdown when clicking outside of it
-                        document.addEventListener("click", function (event) {
-                            if (
-                                !menuButton.contains(event.target) &&
-                                !dropdownMenu.contains(event.target)
-                            ) {
-                                dropdownMenu.classList.add("hidden");
-                            }
-                        });
                     });
-                </script>
-
+                });
+            </script>
             </div>
         </nav>
     </header>
     <!-- header ends here -->
 
     <!-- shows all accesories products -->
-    <div class="fixed z-40 w-full px-4 pb-2 lg:px-16 lg:mx-auto text-lg font-semibold flex items-center gap-3 bg-white dark:bg-black">
-        <p class="py-2">All Accessories</p>
-       </div>
-    
+    <div
+      class="fixed z-40 w-full px-4 pb-2 lg:px-16 lg:mx-auto text-lg font-semibold flex items-center gap-3 bg-white dark:bg-black"
+    >
+      <p class="py-2">All Accessories</p>
+    </div>
 
-       <!-- main starts here -->
-       <main class="w-full px-4 py-8 mb-12 mt-8 lg:mb-0 lg:px-16 lg:mx-auto">  
-        <div id="container"class="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:gap-x-8"></div> <!-- This is where the fetched data will be displayed -->
-</main>
-<!-- main ends here -->
+    <!-- main starts here -->
+    <main class="w-full px-4 py-8 mb-12 mt-8 lg:mb-0 lg:px-16 lg:mx-auto">
+      <div
+        id="container"
+        class="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:gap-x-8"
+      ></div>
+      <!-- This is where the fetched data will be displayed -->
+    </main>
+    <!-- main ends here -->
 
-
-<!-- this is for mobile navigation -->
-<nav
+    <!-- this is for mobile navigation -->
+    <nav
     class="lg:hidden fixed bottom-0 sm:bottom-4 left-1/2 z-50 w-full h-16 -translate-x-1/2 sm:max-w-lg bg-white dark:bg-black sm:rounded-full border-t-2 sm:border border-gray-200 dark:border-gray-900">
     <!-- bottom navigation -->
-    <div class="py-2 px-4 sm:px-6 text-xs w-full h-full sm:max-w-lg dark:text-white ">
-        <div class="grid grid-cols-5 gap-3">
-            <div id="home">
-                <a href="index.html" class="flex flex-col justify-between items-center focus:outline-none  ">
-                    <span class="text-xl"><i class="fa-solid fa-house-chimney"></i></span>
-                    <span>Home</span>
-                </a>
-            </div>
-            <div id="all-top">
-                <a href="tops.html" class="flex flex-col justify-between items-center focus:outline-none  ">
-                    <span class="text-xl"><i class="fa-solid fa-shirt"></i></span>
-                    <span>Tops</span>
-                </a>
-            </div>
-
-            <div id="all-bottom">
-                <a href="bottoms.html" class="flex flex-col justify-between items-center focus:outline-none  ">
-                    <svg fill="currentColor" height="28" width="28"
-                     version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-31.73 -31.73 592.37 592.37"
-                        xml:space="preserve">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <g>
-                                <g>
-                                    <polygon
-                                        points="256.807,322.161 256.807,80.874 130.188,80.874 0,413.493 186.507,496.144 ">
-                                    </polygon>
-                                    <path
-                                        d="M272.107,210.526c43.25-23.103,46.16-81.843,46.982-125.793c0.027-1.533,0.453-2.8,1.1-3.859h-48.086v129.652H272.107z">
-                                    </path>
-                                    <path
-                                        d="M333.439,80.874c0.605,1.056,0.982,2.323,0.951,3.859c-1,53.37-7.387,118.646-62.283,142.624v94.805l70.301,173.982 l186.506-82.65L398.727,80.874H333.439z">
-                                    </path>
-                                    <polygon
-                                        points="398.865,32.771 130.05,32.771 130.05,68.092 256.807,68.092 272.107,68.092 398.865,68.092 ">
-                                    </polygon>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <span>Bottoms</span>
-                </a>
-            </div>
-            <div id="accessorie">
-                <a href="accessories.html" class="flex flex-col justify-between items-center focus:outline-none  ">
-                    <span class="text-xl"><i class="fa-solid fa-glasses"></i></span>
-
-                    <span>Accessories</span>
-                </a>
-            </div>
-
-            <div id="footwear">
-                <a href="footwears.html" class="flex flex-col justify-between items-center focus:outline-none  ">
-                    <span class="text-xl"><i class="fa-solid fa-socks"></i></span>
-                    <span>Footwears</span>
-                </a>
-            </div>
-
+    <div class="py-2 px-4 sm:px-6 text-xs w-full h-full sm:max-w-lg dark:text-white">
+      <div class="grid grid-cols-5 gap-3">
+        <div id="home">
+          <a href="index.html" class="flex flex-col justify-between items-center focus:outline-none">
+            <span class="text-xl"><i class="fa-light fa-house"></i></span>
+            <span>Home</span>
+          </a>
         </div>
+        <div id="all-top">
+          <a href="tops.html" class="flex flex-col justify-between items-center focus:outline-none">
+            <span class="text-xl"><i class="fa-light fa-shirt"></i></span>
+            <span>Tops</span>
+          </a>
+        </div>
+
+        <div id="all-bottom">
+          <a href="bottoms.html" class="flex flex-col gap-1 mt-0.5 justify-between items-center focus:outline-none">
+            <svg fill="currentColor" height="22" width="24" version="1.1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512.007 512.007" xml:space="preserve">
+              <g id="SVGRepo_bgCarrier" stroke-width="1"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <g>
+                    <path
+                      d="M511.9,478.51l-64-448c-0.747-5.227-5.227-9.173-10.56-9.173H74.673c-5.333,0-9.813,3.947-10.56,9.173l-64,448 c-0.853,5.867,3.2,11.2,9.067,12.053c0.533,0.107,0.96,0.107,1.493,0.107h202.88c5.013,0,9.387-3.52,10.453-8.427l32-149.12 l32,149.12c1.067,4.907,5.44,8.427,10.453,8.427h202.88c5.867,0,10.667-4.8,10.667-10.667 C512.007,479.47,512.007,478.937,511.9,478.51z M428.06,42.67l13.44,93.867c-52.8-35.947-75.84-74.347-84.693-93.867H428.06z M83.953,42.67h71.253c-8.96,19.627-31.893,57.92-84.693,93.867L83.953,42.67z M307.1,469.336L307.1,469.336L276.38,326.51 c-0.107-0.533-0.32-1.067-0.427-1.6c-4.16-10.987-16.533-16.533-27.52-12.267c-5.653,2.133-10.133,6.613-12.267,12.267 c-0.213,0.533-0.32,1.067-0.427,1.6l-30.827,142.827H22.94l43.52-304.853c77.973-47.147,104.427-101.547,112-121.813h66.88 v170.667c0,5.867,4.8,10.667,10.667,10.667c5.867,0,10.667-4.8,10.667-10.667V42.67h66.88 c7.467,20.267,34.027,74.667,111.893,121.813l43.627,304.853H307.1z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <span>Bottoms</span>
+          </a>
+        </div>
+        <div id="accessorie">
+          <a href="accessories.html" class="flex flex-col justify-between items-center focus:outline-none">
+            <span class="text-xl"><i class="fa-light fa-mitten"></i></span>
+
+            <span>Accessories</span>
+          </a>
+        </div>
+
+        <div id="shoe">
+          <a href="shoes.html" class="flex flex-col justify-between items-center focus:outline-none">
+            <span class="text-xl"><i class="fa-light fa-boot"></i></span>
+            <span>Shoes</span>
+          </a>
+        </div>
+      </div>
     </div>
     <!-- bottom navigation end -->
-</nav>
-<!-- this is for mobile navigation ends here -->
+  </nav>
+    <!-- this is for mobile navigation ends here -->
 
-<!-- script to make the current page active in the header (Home) -->
-<script>
-    document.getElementById("accessories").classList.add("border-b-2", "border-black", "dark:border-white", "bg-gray-100", "dark:bg-gray-700");
-    document.getElementById("accessorie").classList.add("border-b-2", "border-black", "dark:border-white");
+    <!-- script to make the current page active in the header (Home) -->
+    <script>
+      document
+        .getElementById("accessories")
+        .classList.add(
+          "border-b-2",
+          "border-black",
+          "dark:border-white",
+          "bg-gray-100",
+          "dark:bg-gray-700"
+        );
+      document
+        .getElementById("accessorie")
+        .classList.add("border-b-2", "border-black", "dark:border-white");
+    </script>
+    <script>
+      // Fetch data from Google Sheets
+      const SHEET_ID = "1AXJ77u2af1Ub5Zx1oU50MapipGxGRCub45QUlmYlYA4";
+      const SHEET_TITLE = "products list";
+      const SHEET_RANGE = "A2:I"; // Fetch from column A to I
+      const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`;
 
-</script>
-<script>
-    // Fetch data from Google Sheets
-    const SHEET_ID = '1AXJ77u2af1Ub5Zx1oU50MapipGxGRCub45QUlmYlYA4';
-    const SHEET_TITLE = 'products list';
-    const SHEET_RANGE = 'A2:I'; // Fetch from column A to I
-    const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`;
+      fetch(FULL_URL)
+        .then((response) => response.text())
+        .then((data) => {
+          const jsonData = processJSONData(data);
+          const container = document.getElementById("container");
 
-    fetch(FULL_URL)
-        .then(response => response.text())
-        .then(data => {
-            const jsonData = processJSONData(data);
-            const container = document.getElementById('container');
+          // Reverse the order of the rows
+          const reversedData = jsonData.slice().reverse();
 
-            // Reverse the order of the rows
-            const reversedData = jsonData.slice().reverse();
+          // Filter and only display products whose category
+          const product = reversedData.filter(
+            (product) => product.category === "Accessorie"
+          );
 
-            // Filter and only display products whose category
-            const product = reversedData.filter(product => product.category === 'Accessorie');
+          // Fetch data from Google Sheets and include the product.html file beacuse it handles it
+          if (product.length === 0) {
+            const comingSoonElement = document.createElement("div");
+            comingSoonElement.textContent = "Coming Soon";
+            container.appendChild(comingSoonElement);
+            return;
+          }
 
-
-            // Fetch data from Google Sheets and include the product.html file beacuse it handles it
-            if (product.length === 0) {
-    const comingSoonElement = document.createElement('div');
-    comingSoonElement.textContent = 'Coming Soon';
-    container.appendChild(comingSoonElement);
-    return;
-}
-
-product.forEach(rowData => {
-                const cardHTML = createCardHTML(rowData);
-                const cardElement = createCardElement(cardHTML);
-                container.appendChild(cardElement);
-            });
+          product.forEach((rowData) => {
+            const cardHTML = createCardHTML(rowData);
+            const cardElement = createCardElement(cardHTML);
+            container.appendChild(cardElement);
+          });
         })
-        .catch(error => {
-            console.error('Error fetching data:', error);
+        .catch((error) => {
+          console.error("Error fetching data:", error);
         });
 
-        
-
-    // Function to process JSON data and extract relevant fields
-    function processJSONData(data) {
-        const responseText = data.substring(data.indexOf('(', 0) + 1, data.lastIndexOf(')'));
+      // Function to process JSON data and extract relevant fields
+      function processJSONData(data) {
+        const responseText = data.substring(
+          data.indexOf("(", 0) + 1,
+          data.lastIndexOf(")")
+        );
         const jsonResponse = JSON.parse(responseText);
 
-        if (jsonResponse && jsonResponse.status === 'ok' && jsonResponse.table && jsonResponse.table.rows) {
-            return jsonResponse.table.rows.map(row => {
-                return {
-                    name: row.c[1] ? row.c[1].v : '', // Map to the second column (B in spreadsheet, index 1)
-                    image: row.c[2] ? row.c[2].v : '', // Map to the third column (C in spreadsheet, index 2)
-                    description: row.c[3] ? row.c[3].v : '', // Map to the fourth column (D in spreadsheet, index 3)
-                    category: row.c[4] ? row.c[4].v : '', // Map to the fifth column (E in spreadsheet, index 4)
-                    size: row.c[5] ? row.c[5].v : '', // Map to the sixth column (F in spreadsheet, index 5)
-                    color: row.c[6] ? row.c[6].v : '', // Map to the seventh column (G in spreadsheet, index 6)
-                    price: row.c[7] ? row.c[7].v : '', // Map to the eighth column (H in spreadsheet, index 7)
-                    lastUpdate: row.c[8] ? row.c[8].v : '' // Map to the ninth column (I in spreadsheet, index 8)
-                };
-            });
+        if (
+          jsonResponse &&
+          jsonResponse.status === "ok" &&
+          jsonResponse.table &&
+          jsonResponse.table.rows
+        ) {
+          return jsonResponse.table.rows.map((row) => {
+            return {
+              name: row.c[1] ? row.c[1].v : "", // Map to the second column (B in spreadsheet, index 1)
+              image: row.c[2] ? row.c[2].v : "", // Map to the third column (C in spreadsheet, index 2)
+              description: row.c[3] ? row.c[3].v : "", // Map to the fourth column (D in spreadsheet, index 3)
+              category: row.c[4] ? row.c[4].v : "", // Map to the fifth column (E in spreadsheet, index 4)
+              size: row.c[5] ? row.c[5].v : "", // Map to the sixth column (F in spreadsheet, index 5)
+              color: row.c[6] ? row.c[6].v : "", // Map to the seventh column (G in spreadsheet, index 6)
+              price: row.c[7] ? row.c[7].v : "", // Map to the eighth column (H in spreadsheet, index 7)
+              lastUpdate: row.c[8] ? row.c[8].v : "", // Map to the ninth column (I in spreadsheet, index 8)
+            };
+          });
         } else {
-            return [];
+          return [];
         }
-    }
+      }
 
-    // Function to create an element from HTML
-    function createCardElement(cardHTML) {
-        const cardElement = document.createElement('div');
+      // Function to create an element from HTML
+      function createCardElement(cardHTML) {
+        const cardElement = document.createElement("div");
         cardElement.innerHTML = cardHTML;
         return cardElement;
-    }
+      }
 
-    // Function to create HTML for a product card
-    function createCardHTML(data) {
+      // Function to create HTML for a product card
+      function createCardHTML(data) {
         return `
-            <div class="group">
+        <div class="group">
                 <div class="aspect-square overflow-hidden rounded-lg">
-                    <img src="${data.image}" alt="${data.description}" class="h-full w-full object-cover object-center group-hover:brightness-75 duration-300">
+                    <a href="${data.image}" target="_blank"><img src="${data.image}" alt="${data.description}" class="h-full w-full object-cover object-center group-hover:brightness-75 duration-300"></a>
                 </div>
-                <h3 class="mt-4 text-base">${data.name}</h3>
-                <div class="flex items-center justify-between mt-1 opacity-80 text-base">
+                <h3 class="mt-4 text-base font-semibold tracking-tight ">${data.name}</h3>
+                <div class="flex items-center justify-between flex-wrap mt-1 opacity-80 text-base tracking-tight ">
                     <p>${data.color}</p>
                     <p>${data.size}</p>
-                    <p class="font-semibold" >Rs ${data.price}</p>
                 </div>
+                <p class="font-semibold mt-1 opacity-80 text-base tracking-tight  dark:group-hover:text-green-400 group-hover:text-green-700" >Rs ${data.price}</p>
+
             </div>
         `;
-    }
-</script>
-</body>
+      }
+    </script>
+   <!-- footer starts here -->
+   <footer>
+    <div
+        class="mb-16 lg:mb-0 flex flex-col items-center justify-center py-4 text-sm">
+        <p class="text-lg font-bold">"FASHION AT YOUR FINGERTIPS"</p>
+        <p class="mt-4 text-xs">© 2021 BALAMI CLOTHING. All rights reserved.</p>
+        <p >Designed by <a href="https://www.github.com/rayyan-balami" class="font-medium">Rayyan
+                Balami</a></p>
+    </div>
+</footer>
+<!-- footer ends here -->
+  </body>
 </html>
-
-

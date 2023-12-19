@@ -149,47 +149,20 @@
     </header>
     <!-- header ends here -->
 
-    <!-- tops category -->
-    <div
-    class="fixed z-40 w-full px-4 lg:px-16 lg:mx-auto text-lg font-semibold flex items-center gap-3 bg-white dark:bg-black ">
+    <!-- index/home shows all products -->
+    <div class="fixed z-40 w-full px-4 pb-2 lg:px-16 lg:mx-auto text-lg font-semibold flex items-center gap-3 bg-white dark:bg-black">
+        <p class="py-2">All Shoes</p>
+       </div>
 
-    <ul class="flex items-center flex-wrap gap-2 border-b-2 border-gray-100 dark:border-gray-900 w-full">
-        <p class="hidden lg:block">Tops&nbsp;Category&nbsp;:</p>
-        <li id="all-tops">
-            <a href="tops.html"
-                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">All</a>
-        </li>
-        <li id="t-shirts">
-            <a href="tshirts.html"
-                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">T-Shirts</a>
-        </li>
-        <li id="sweaters">
-            <a href="sweaters.html"
-                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Sweaters</a>
-        </li>
-        <li id="hoodies">
-            <a href="hoodies.html"
-                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Hoodies</a>
-        </li>
-        <li id="jackets">
-            <a href="jackets.html"
-                class="block py-2 px-3 text-base font-medium hover:bg-gray-100 dark:hover:bg-gray-700 duration-300 rounded-md">Jackets</a>
-        </li>
-    </ul>
-</div>
-    <!-- tops category end -->
-
-    <!-- main starts here -->
-    <main class="w-full px-4 py-8 mb-12 mt-20 md:mt-10 lg:mb-0 lg:px-16 lg:mx-auto">
-        <div id="container"
-            class="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:gap-x-8"></div>
-        <!-- This is where the fetched data will be displayed -->
-    </main>
-    <!-- main ends here -->
+       <!-- main starts here -->
+       <main class="w-full px-4 py-8 mb-12 mt-8 lg:mb-0 lg:px-16 lg:mx-auto">  
+        <div id="container"class="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:gap-x-8"></div> <!-- This is where the fetched data will be displayed -->
+</main>
+<!-- main ends here -->
 
 
-    <!-- this is for mobile navigation -->
-    <nav
+<!-- this is for mobile navigation -->
+<nav
     class="lg:hidden fixed bottom-0 sm:bottom-4 left-1/2 z-50 w-full h-16 -translate-x-1/2 sm:max-w-lg bg-white dark:bg-black sm:rounded-full border-t-2 sm:border border-gray-200 dark:border-gray-900">
     <!-- bottom navigation -->
     <div class="py-2 px-4 sm:px-6 text-xs w-full h-full sm:max-w-lg dark:text-white">
@@ -224,19 +197,6 @@
                 </g>
               </g>
             </svg>
-            <style>
-              /* Define the fill color for the light mode */
-              .theme-icon {
-                fill: #000; /* Set your light mode color here */
-              }
-            
-              /* Media query for dark mode */
-              @media (prefers-color-scheme: dark) {
-                .theme-icon {
-                  fill: #FFF; /* Set your dark mode color here */
-                }
-              }
-            </style>
             <span>Bottoms</span>
           </a>
         </div>
@@ -258,91 +218,88 @@
     </div>
     <!-- bottom navigation end -->
   </nav>
-    <!-- this is for mobile navigation ends here -->
+<!-- this is for mobile navigation ends here -->
 
-    <!-- script to make the current page active in the header (Home) -->
-    <script>
-        document.getElementById("tops").classList.add("border-b-2", "border-black", "dark:border-white", "bg-gray-100", "dark:bg-gray-700");//for desktop navbar
-        document.getElementById("all-top").classList.add("border-b-2", "border-black", "dark:border-white"); //for mobile navbar because ids are unique
-    
-        document.getElementById("t-shirts").classList.add("border-b-2", "border-black", "dark:border-white", "bg-gray-100", "dark:bg-gray-700"); //for desktop navbar
-        document.getElementById("t-shirt").classList.add("border-b-2", "border-black", "dark:border-white");  //for mobile navbar because ids are unique
-    
-    </script>
-    <script>
-        // Fetch data from Google Sheets
-        const SHEET_ID = "1AXJ77u2af1Ub5Zx1oU50MapipGxGRCub45QUlmYlYA4";
-        const SHEET_TITLE = 'products list';
-        const SHEET_RANGE = 'A2:I'; // Fetch from column A to I
-        const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`;
+<!-- script to make the current page active in the header (Home) -->
+<script>
+    document.getElementById("shoes").classList.add("border-b-2", "border-black", "dark:border-white", "bg-gray-100", "dark:bg-gray-700");
+    document.getElementById("shoe").classList.add("border-b-2", "border-black", "dark:border-white");
 
-        fetch(FULL_URL)
-            .then(response => response.text())
-            .then(data => {
-                const jsonData = processJSONData(data);
-                const container = document.getElementById('container');
+</script>
+<script>
+    // Fetch data from Google Sheets
+    const SHEET_ID = "1AXJ77u2af1Ub5Zx1oU50MapipGxGRCub45QUlmYlYA4";
+    const SHEET_TITLE = 'products list';
+    const SHEET_RANGE = 'A2:I'; // Fetch from column A to I
+    const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`;
 
-                // Reverse the order of the rows
-                const reversedData = jsonData.slice().reverse();
+    fetch(FULL_URL)
+        .then(response => response.text())
+        .then(data => {
+            const jsonData = processJSONData(data);
+            const container = document.getElementById('container');
 
-                // Filter and only display products whose category
-                const product = reversedData.filter(product => product.category === 'T-Shirt');
+            // Reverse the order of the rows
+            const reversedData = jsonData.slice().reverse();
+
+            // Filter and only display products whose category
+            const product = reversedData.filter(product => product.category === 'Shoe');
 
 
-                // Fetch data from Google Sheets and include the product.html file beacuse it handles it
-                if (product.length === 0) {
-                    const comingSoonElement = document.createElement('div');
-                    comingSoonElement.textContent = 'Coming Soon';
-                    container.appendChild(comingSoonElement);
-                    return;
-                }
+            // Fetch data from Google Sheets and include the product.html file beacuse it handles it
+            if (product.length === 0) {
+    const comingSoonElement = document.createElement('div');
+    comingSoonElement.textContent = 'Coming Soon';
+    container.appendChild(comingSoonElement);
+    return;
+}
 
-                product.forEach(rowData => {
-                    const cardHTML = createCardHTML(rowData);
-                    const cardElement = createCardElement(cardHTML);
-                    container.appendChild(cardElement);
-                });
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
+product.forEach(rowData => {
+                const cardHTML = createCardHTML(rowData);
+                const cardElement = createCardElement(cardHTML);
+                container.appendChild(cardElement);
             });
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
 
+        
 
+    // Function to process JSON data and extract relevant fields
+    function processJSONData(data) {
+        const responseText = data.substring(data.indexOf('(', 0) + 1, data.lastIndexOf(')'));
+        const jsonResponse = JSON.parse(responseText);
 
-        // Function to process JSON data and extract relevant fields
-        function processJSONData(data) {
-            const responseText = data.substring(data.indexOf('(', 0) + 1, data.lastIndexOf(')'));
-            const jsonResponse = JSON.parse(responseText);
-
-            if (jsonResponse && jsonResponse.status === 'ok' && jsonResponse.table && jsonResponse.table.rows) {
-                return jsonResponse.table.rows.map(row => {
-                    return {
-                        name: row.c[1] ? row.c[1].v : '', // Map to the second column (B in spreadsheet, index 1)
-                        image: row.c[2] ? row.c[2].v : '', // Map to the third column (C in spreadsheet, index 2)
-                        description: row.c[3] ? row.c[3].v : '', // Map to the fourth column (D in spreadsheet, index 3)
-                        category: row.c[4] ? row.c[4].v : '', // Map to the fifth column (E in spreadsheet, index 4)
-                        size: row.c[5] ? row.c[5].v : '', // Map to the sixth column (F in spreadsheet, index 5)
-                        color: row.c[6] ? row.c[6].v : '', // Map to the seventh column (G in spreadsheet, index 6)
-                        price: row.c[7] ? row.c[7].v : '', // Map to the eighth column (H in spreadsheet, index 7)
-                        lastUpdate: row.c[8] ? row.c[8].v : '' // Map to the ninth column (I in spreadsheet, index 8)
-                    };
-                });
-            } else {
-                return [];
-            }
+        if (jsonResponse && jsonResponse.status === 'ok' && jsonResponse.table && jsonResponse.table.rows) {
+            return jsonResponse.table.rows.map(row => {
+                return {
+                    name: row.c[1] ? row.c[1].v : '', // Map to the second column (B in spreadsheet, index 1)
+                    image: row.c[2] ? row.c[2].v : '', // Map to the third column (C in spreadsheet, index 2)
+                    description: row.c[3] ? row.c[3].v : '', // Map to the fourth column (D in spreadsheet, index 3)
+                    category: row.c[4] ? row.c[4].v : '', // Map to the fifth column (E in spreadsheet, index 4)
+                    size: row.c[5] ? row.c[5].v : '', // Map to the sixth column (F in spreadsheet, index 5)
+                    color: row.c[6] ? row.c[6].v : '', // Map to the seventh column (G in spreadsheet, index 6)
+                    price: row.c[7] ? row.c[7].v : '', // Map to the eighth column (H in spreadsheet, index 7)
+                    lastUpdate: row.c[8] ? row.c[8].v : '' // Map to the ninth column (I in spreadsheet, index 8)
+                };
+            });
+        } else {
+            return [];
         }
+    }
 
-        // Function to create an element from HTML
-        function createCardElement(cardHTML) {
-            const cardElement = document.createElement('div');
-            cardElement.innerHTML = cardHTML;
-            return cardElement;
-        }
+    // Function to create an element from HTML
+    function createCardElement(cardHTML) {
+        const cardElement = document.createElement('div');
+        cardElement.innerHTML = cardHTML;
+        return cardElement;
+    }
 
-        // Function to create HTML for a product card
-        function createCardHTML(data) {
-            return `
-            <div class="group">
+    // Function to create HTML for a product card
+    function createCardHTML(data) {
+        return `
+        <div class="group">
                 <div class="aspect-square overflow-hidden rounded-lg">
                     <a href="${data.image}" target="_blank"><img src="${data.image}" alt="${data.description}" class="h-full w-full object-cover object-center group-hover:brightness-75 duration-300"></a>
                 </div>
@@ -355,19 +312,20 @@
 
             </div>
         `;
-        }
-    </script>
-     <!-- footer starts here -->
-    <footer>
-      <div
-          class="mb-16 lg:mb-0 flex flex-col items-center justify-center py-4 text-sm">
-          <p class="text-lg font-bold">"FASHION AT YOUR FINGERTIPS"</p>
-          <p class="mt-4 text-xs">© 2021 BALAMI CLOTHING. All rights reserved.</p>
-          <p >Designed by <a href="https://www.github.com/rayyan-balami" class="font-medium">Rayyan
-                  Balami</a></p>
-      </div>
-  </footer>
-  <!-- footer ends here -->
+    }
+</script>
+<!-- footer starts here -->
+<footer>
+  <div
+      class="mb-16 lg:mb-0 flex flex-col items-center justify-center py-4 text-sm">
+      <p class="text-lg font-bold">"FASHION AT YOUR FINGERTIPS"</p>
+      <p class="mt-4 text-xs">© 2021 BALAMI CLOTHING. All rights reserved.</p>
+      <p >Designed by <a href="https://www.github.com/rayyan-balami" class="font-medium">Rayyan
+              Balami</a></p>
+  </div>
+</footer>
+<!-- footer ends here -->
 </body>
-
 </html>
+
+
